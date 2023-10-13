@@ -12,7 +12,6 @@ module "ecs_cluster" {
 
   prefix = local.prefix
   region = local.region
-  iam_role = local.iam_role
   container = local.container
 
   subnet_ids = module.base.subnet_ids

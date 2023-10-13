@@ -1,6 +1,5 @@
 variable "prefix" {}
 variable "region" {}
-variable "iam_role" {}
 variable "container" {}
 
 variable "subnet_ids" {}

@@ -43,5 +43,4 @@ locals {
     image = "public.ecr.aws/g7l4n5q7/lefootcestrince:v1"
   }
 
-  iam_role = "ECS_Students"
 }
