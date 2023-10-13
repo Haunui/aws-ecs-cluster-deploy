@@ -1,6 +1,7 @@
 variable "prefix" {}
 variable "region" {}
 variable "iam_role" {}
+variable "container" {}
 
 variable "subnet_ids" {}
 variable "security_group_ids" {}
@@ -57,8 +58,8 @@ resource "aws_ecs_task_definition" "task" {
 
   container_definitions = jsonencode([
     {
-      name = "lefootcestrince"
-      image = "public.ecr.aws/g7l4n5q7/lefootcestrince:v1"
+      name = var.container.name
+      image = var.container.image
       cpu = 512
       memory = 1024
       essential = true
